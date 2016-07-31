@@ -1,0 +1,60 @@
+pict@ubuntu:~$ install Git
+install: missing destination file operand after ‘Git’
+Try 'install --help' for more information.
+pict@ubuntu:~$ sudo get-apt install Git
+[sudo] password for pict: 
+sudo: get-apt: command not found
+pict@ubuntu:~$ mkdir PICT
+pict@ubuntu:~$ cd PICT
+pict@ubuntu:~/PICT$ git init.
+git: 'init.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+pict@ubuntu:~/PICT$ git init .
+Initialized empty Git repository in /home/pict/PICT/.git/
+pict@ubuntu:~/PICT$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+pict@ubuntu:~/PICT$ ls
+pict@ubuntu:~/PICT$ ls -l
+total 0
+pict@ubuntu:~/PICT$ ls -al
+total 20
+drwxrwxr-x   3 pict pict  4096 Jul 31 06:09 .
+drwxr-xr-x 140 pict pict 12288 Jul 31 06:08 ..
+drwxrwxr-x   7 pict pict  4096 Jul 31 06:16 .git
+pict@ubuntu:~/PICT$ cd .git
+pict@ubuntu:~/PICT/.git$ ls -al
+total 40
+drwxrwxr-x 7 pict pict 4096 Jul 31 06:16 .
+drwxrwxr-x 3 pict pict 4096 Jul 31 06:09 ..
+drwxrwxr-x 2 pict pict 4096 Jul 31 06:09 branches
+-rw-rw-r-- 1 pict pict   92 Jul 31 06:09 config
+-rw-rw-r-- 1 pict pict   73 Jul 31 06:09 description
+-rw-rw-r-- 1 pict pict   23 Jul 31 06:09 HEAD
+drwxrwxr-x 2 pict pict 4096 Jul 31 06:09 hooks
+drwxrwxr-x 2 pict pict 4096 Jul 31 06:09 info
+drwxrwxr-x 4 pict pict 4096 Jul 31 06:09 objects
+drwxrwxr-x 4 pict pict 4096 Jul 31 06:09 refs
+pict@ubuntu:~/PICT/.git$ ls
+branches  config  description  HEAD  hooks  info  objects  refs
+pict@ubuntu:~/PICT/.git$ 
+pict@ubuntu:~/PICT/.git$ cd ..
+pict@ubuntu:~/PICT$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	git_commands
+	name.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+pict@ubuntu:~/PICT$ 
+
